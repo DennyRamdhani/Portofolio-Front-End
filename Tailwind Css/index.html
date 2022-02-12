@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container mx-auto mt-5">
+      <header class="flex justify-between items-center">
+        <div>
+          <h1 class="text-indigo-600 text-3xl font-extrabold">Tailwind.CSS</h1>
+        </div>
+        <div>
+          <ul class="flex">
+            <a href="#" class="px-4 py-2 hover:text-indigo-700">Home</a>
+            <a href="product.html" class="px-4 py-2 hover:text-indigo-700">Product</a>
+            <a href="#" class="px-4 py-2 hover:text-indigo-700">Service</a>
+            <a href="#" class="px-4 py-2 hover:text-indigo-700">About</a>
+            <a href="#" class="px-4 py-2 hover:text-indigo-700">Contact</a>
+          </ul>
+        </div>
+        <div>
+          <button class="flex bg-indigo-500 py-[6px] px-8 rounded-md text-white hover:bg-indigo-700 hover:text-white hover:rounded-md hover:cursor-pointer">Login</button>
+        </div>
+      </header>
+      <div class="flex items-center -m-3">
+        <div class="w-1/2 px-10">
+          <h1 class="text-4xl font-bold">Build a Bright Future Development With Us</h1>
+          <p class="py-8">
+            If you wish to partner with us or potentially purchase the domain name <strong class="text-indigo-700">lorem.com</strong> outright to fast-track a great idea to success, <strong class="text-indigo-700">please read on.</strong>
+          </p>
+          <a href="#" class="border-2 py-2 px-8 border-indigo-500 rounded-md hover:border-indigo-700 hover:text-indigo-900">Learn More</a>
+        </div>
+        <div class="w-1/2">
+          <img src="src/image/Building.svg" alt="gambar" />
+        </div>
+      </div>
+      <div class="container flex justify-center items-center mt-none px-10 py-10 text-center">
+        <div class="border-none bg-indigo-500 rounded-md h-30 w-full shadow-md shadow-indigo-600 hover:bg-indigo-800 cursor-pointer">
+          <div class="py-5 px-5">
+            <h1 class="font-bold text-xl text-white">Our Brand Support Product</h1>
+            <p class="pt-1 text-white font-light"><i>" Hey there is a brand support from indonesian, we hope you can support me too "</i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- mt-[value] -->

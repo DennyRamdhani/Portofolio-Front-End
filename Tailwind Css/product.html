@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container mx-auto mt-5">
+      <header class="flex justify-between items-center">
+        <div class="text-indigo-600 text-3xl font-extrabold">
+          <h1>Tailwind.CSS</h1>
+        </div>
+        <div>
+          <ul class="flex">
+            <li><a href="index.html" class="px-4 py-2 hover:text-indigo-700">Home</a></li>
+            <li><a href="index.html" class="px-4 py-2 hover:text-indigo-700">Product</a></li>
+            <li><a href="index.html" class="px-4 py-2 hover:text-indigo-700">Service</a></li>
+            <li><a href="index.html" class="px-4 py-2 hover:text-indigo-700">About</a></li>
+            <li><a href="index.html" class="px-4 py-2 hover:text-indigo-700">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <button class="flex bg-indigo-500 py-[6px] px-8 rounded-md text-white hover:bg-indigo-700 hover:text-white hover:rounded-md hover:cursor-pointer">Login</button>
+        </div>
+      </header>
+      <div class="flex mt-20 mx-10">
+        <div class="w-1/2">
+          <h1 class="text-3xl font-bold text-cyan-500">Hi, <b>Tailwind CSS</b> is Powerfull Customize for Design Website</h1>
+          <p class="mt-5">I’m a Product Designer with a passion for participate in every stage of digital product, from discovery to delivery. Helping to focus the business goals on users.</p>
+          <div class="columns-2 mt-5">
+            <p class="">I’m looking for new opportunities Previously I worked at <span class="text-indigo-500">Multiplica Talent Chile</span></p>
+            <p>Santiago de Chile <span class="text-indigo-500">cristopher@galarce.pro</span></p>
+          </div>
+          <p class="mt-6"><a href="#" class="border-2 py-2 px-5 rounded-md border-indigo-500 hover:border-indigo-700">Check Some Projects</a></p>
+        </div>
+        <div class="w-1/2">
+          <img src="src/image/hero.png" alt="figma" />
+        </div>
+      </div>
+      <div class="columns-3 mb-10">
+        <a href="#"><img src="src/image/Group 80.png" alt="" /></a>
+        <a href="#"><img src="src/image/Group 81.png" alt="" /></a>
+        <a href="#"><img src="src/image/Group 82.png" alt="" /></a>
+      </div>
+    </div>
+  </body>
+</html>
